@@ -1,59 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏛️ SI-DESA: Sistem Informasi Persuratan Digital Terintegrasi
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem manajemen administrasi desa yang dirancang untuk mendigitalisasi proses kependudukan dan penerbitan surat resmi secara otomatis dan akurat.
 
-## About Laravel
+## 🚀 Fitur Unggulan
+* **Manajemen Relasi 4 Tabel**: Integrasi data antara Tabel Users (Admin), Tabel Penduduk, Tabel Jenis Surat (Master), dan Tabel Surat (Transaksi).
+* **Automated PDF Generator**: Penerbitan dokumen resmi dengan penomoran surat otomatis yang dapat langsung diunduh.
+* **Dashboard Statistik Real-time**: Visualisasi jumlah penduduk dan aktivitas persuratan terbaru.
+* **Modern UI/UX**: Antarmuka responsif dengan tema Glassmorphism dan dukungan Mode Gelap (Dark Mode).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Detail Teknis & Relasi Database
+Proyek ini mengimplementasikan normalisasi database dengan struktur relasi sebagai berikut:
+1. **Tabel Users**: Menyimpan data administrator sistem (Afif Ananta).
+2. **Tabel Penduduk**: Master data identitas warga (NIK, Nama, Alamat).
+3. **Tabel Jenis_Surats**: Master kategori surat (Domisili, SKU, SKTM).
+4. **Tabel Surats**: Tabel transaksi yang menghubungkan ketiga tabel di atas melalui foreign key.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🔑 Akun Akses Pengujian (UAS)
+Gunakan kredensial berikut untuk menguji fitur fungsional sistem:
+* **Email**: `admin@desa.com`
+* **Password**: `admibn desa`
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📦 Cara Instalasi Lokal
+Clone repositori:
+git clone [https://github.com/username/si-desa.git](https://github.com/username/si-desa.git)
+Install dependencies:
+composer install
+npm install && npm run build
+Konfigurasi file .env (sesuaikan dengan database lokal lu).
+Migrasi dan Import Database:
+Buat database bernama desa.
+Import file desa.sql yang tersedia di folder root.
+Jalankan server:
+php artisan serve
