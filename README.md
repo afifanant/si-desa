@@ -72,4 +72,3 @@ Akses melalui: `http://localhost:8000`
 
 **Afif Ananta** *Program Studi Sistem Informasi - UINSU Medan*
 
-```
