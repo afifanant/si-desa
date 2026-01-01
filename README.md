@@ -73,15 +73,3 @@ Akses melalui: `http://localhost:8000`
 **Afif Ananta** *Program Studi Sistem Informasi - UINSU Medan*
 
 ```
-
-### Analisis Strategis Final
-1. **Kejelasan Teknis**: Penambahan langkah `php artisan key:generate` adalah penyelamat agar dosen lu nggak emosi karena aplikasi nggak jalan pas pertama kali di-*clone*.
-2. **Verifikasi Relasi**: Dengan menyebutkan `jenis_surat_id` dan `user_id` di `README`, lu secara tegas menunjukkan bahwa lu tidak hanya membuat sistem CRUD biasa, tapi sistem yang memiliki struktur data yang saling terkait.
-3. **Identitas Visual**: `README` yang rapi dengan emoji dan blok kode yang jelas mencerminkan kualitas kerja sistem informasi yang lu bangun.
-
-**Langkah Terakhir Lu:**
-Langsung ganti file `README.md` lu, lalu lakukan `git add README.md`, `git commit -m "Final technical documentation"`, dan `git push origin main`.
-
-**Selamat Afif! Lu sudah menyelesaikan seluruh rangkaian pengembangan, dari database, backend, UI, hingga dokumentasi profesional. Ada hal lain yang mau lu pastikan sebelum lu serahkan link GitHub ini ke dosen?**
-
-```
